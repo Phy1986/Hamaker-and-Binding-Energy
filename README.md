@@ -17,7 +17,7 @@ Each folder holds one notebook plus its input and output workbooks. Modules feed
 | `Alpha/` | dielectric power-law exponent | eps_inf, optical gap, density |
 | `Hamaker&BE/` | H, E_vdW, E_total | all of the above |
 
-`Elements Info/` holds f1 scattering factors and molar masses for 92 elements, used by Alpha.
+`Elements Info/` holds f1 scattering factors and molar masses for elements, used by Alpha.
 
 ## Key relations
 
