@@ -57,22 +57,13 @@ where `d_MX` is the mean metal–halogen bond length, `a_B = 0.529 A` the Bohr r
 trihalides, 18 for the CuX/AgX monohalides) and `Nsp` the sp-only count, equal to
 `Nval` except for the monohalides, where `Nsp = 8`.
 
-`b` is the dimensionless screening prefactor: 3.05 for the layered TMHs, 3.20 for
-AgCl and AgBr, 1.42 for AgI, CuCl, CuBr and CuI. `ZX = 7`; `ZM` is the formal cation
+`ZX = 7`; `ZM` is the formal cation
 oxidation state (2 or 3), except for the monohalides, where `ZM = 11` and the
 effective core charge `ZM* = sigma ZM` enters Eq. (10) with `sigma = 1.20`–`1.49`.
 
 ## Requirements
 
 Python 3.10+, pandas, numpy, openpyxl, plus pymatgen (Bandgap) and mendeleev (Ionicity). Developed under 3.12.7.
-
-## Citation
-
-If you use this code or data, please cite:
-
-> E. Rahmanian, A. Sajedi-Moghaddam, R. Asgari, S. H. Aboutalebi,
-> A crystallographic route to Hamaker constants and binding energies in
-> transition-metal halides, *submitted*.
 
 ## License
 
