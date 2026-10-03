@@ -22,15 +22,17 @@ Each folder holds one notebook plus its input and output workbooks. Modules feed
 ## Key relations
 
 ```
-Eh = 40.5 / d^2.5                 Ks = sqrt(4 kF / (pi a_B))
-C  = 14.4 b exp(-Ks r0) |ZA-ZB| / r0
-Ep = sqrt(Eh^2 + C^2)             
-hbar*omega_p = 28.8 sqrt(N / Vm)
-eps_inf = 1 + (hbar*omega_g / Ep)^2 (1 - x + x^2/3),  x = Ep / 4Ef
+Ec  = 40.5 / d_MX^2.5                   Ks  = sqrt(4 kF / (pi a_B))
+Ei  = 14.4 b |ZM - ZX| exp(-Ks r0) / r0,   r0 = d_MX / 2
+Ep  = sqrt(Ec^2 + Ei^2)
+hbar*omega_p0 = 28.8 sqrt(Nval / Vm)
+hbar*omega_p^2 = hbar*omega_p0^2 + Ep^2          <- Horie, was missing
+eps_inf = 1 + (hbar*omega_p / Ep)^2 (1 - x + x^2/3),  x = Ep / (4 EF)
 eps(i xi) = 1 + (eps_inf - 1) / (1 + (xi/omega_UV)^alpha)
-omega_UV = 3.05 Eg^0.736
-H = (3 kB T / 4 pi) sum_n int Li3(r^2) dpsi,  
-E_vdW = H / (12 pi D0^2), D0 = 1.66 A       E_total = E_vdW / (1 - f_Pauling)
+hbar*omega_UV = 3.05 Eg^0.736
+H = (3 kB T / 2) sum_n' Li3(r^2),  r = (eps(i xi_n) - 1)/(eps(i xi_n) + 1)
+E_vdW = H / (12 pi d0^2),  d0 = 1.66 A
+E_total = E_vdW / (1 - f),  f = 1 - exp(-dChi^2 / 4)
 ```
 
 ## Requirements
